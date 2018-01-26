@@ -1,2 +1,2 @@
 # design-patterns
-Strategy
+ChapterOne - Strategy Pattern ✅
