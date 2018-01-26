@@ -28,6 +28,14 @@ namespace ChapterOne.Entities.Duck
              QuackBehavior.Quack();
         }
 
+        public void SetFlyBehavior(IFlyBehavior fb) {
+            FlyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            QuackBehavior = qb;
+        }
         public void Swim() {
             Console.WriteLine("All ducks float, even decoys!");
         }

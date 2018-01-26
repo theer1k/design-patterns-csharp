@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Entities\Duck\Duck.cs" />
     <Compile Include="Entities\Duck\MallardDuck.cs" />
+    <Compile Include="Entities\Duck\ModelDuck.cs" />
+    <Compile Include="Entities\Fly\FlyRocketPowered.cs" />
     <Compile Include="Entities\Fly\FlyNoWay.cs" />
     <Compile Include="Entities\Fly\FlyWithWings.cs" />
     <Compile Include="Entities\Quack\MuteQuack.cs" />
