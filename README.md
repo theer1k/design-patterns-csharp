@@ -1,2 +1,2 @@
 # design-patterns
-From Heads First
+Strategy
