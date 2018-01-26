@@ -9,25 +9,23 @@ namespace ChapterOne.Entities.Duck
 {
     public abstract class Duck
     {
-        private static IFlyBehavior flyBehavior;
-        private static IQuackBehavior quackBehavior;
+        protected static IFlyBehavior FlyBehavior;
+        protected static IQuackBehavior QuackBehavior;
 
         public Duck()
         {
-            flyBehavior.Fly();
-            quackBehavior.Quack();
         }
 
         public abstract void Display();
 
         public void PerformFly()
         {
-            flyBehavior.Fly();
+             FlyBehavior.Fly();
         }
 
         public void PerformQuack()
         {
-            quackBehavior.Quack();
+             QuackBehavior.Quack();
         }
 
         public void Swim() {

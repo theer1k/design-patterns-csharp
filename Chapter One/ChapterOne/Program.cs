@@ -14,6 +14,7 @@ namespace ChapterOne
             Duck mallard = new MallardDuck();
             mallard.PerformQuack();
             mallard.PerformFly();
+            Console.ReadLine();
         }
     }
 }

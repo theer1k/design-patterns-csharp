@@ -14,8 +14,8 @@ namespace ChapterOne.Entities.Duck
     {
         public MallardDuck()
         {
-            IQuackBehavior QuackBehavior = new NormalQuack();
-            IFlyBehavior FlyBehavior = new FlyWithWings();
+            MallardDuck.QuackBehavior = new NormalQuack();
+            MallardDuck.FlyBehavior = new FlyWithWings();
         }
 
         public override void Display() {
