@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Interfaces;
 
-namespace ChapterOne.Entities.Fly
+namespace ChapterOne.Entities.Flyable
 {
-    public class FlyWithWings : IFlyBehavior
+    class FlyNoWay : IFlyBehavior
     {
         public void Fly()
         {
-            Console.WriteLine("I'm flying!!");
+            Console.WriteLine("I'm can't fly");
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Entities.Duck;
-using ChapterOne.Entities.Fly;
+using ChapterOne.Entities.Flyable;
 
 namespace ChapterOne
 {

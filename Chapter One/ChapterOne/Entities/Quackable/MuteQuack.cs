@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Interfaces;
 
-namespace ChapterOne.Entities.Fly
+namespace ChapterOne.Entities.Quackable
 {
-    class FlyNoWay : IFlyBehavior
+    class MuteQuack : IQuackBehavior
     {
-        public void Fly()
+        public void Quack()
         {
-            Console.WriteLine("I'm can't fly");
+            Console.WriteLine("<< Silence >>");
         }
     }
 }

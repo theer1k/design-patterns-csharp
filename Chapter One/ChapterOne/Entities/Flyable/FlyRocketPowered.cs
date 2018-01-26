@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Interfaces;
 
-namespace ChapterOne.Entities.Fly
+namespace ChapterOne.Entities.Flyable
 {
     class FlyRocketPowered : IFlyBehavior
     {

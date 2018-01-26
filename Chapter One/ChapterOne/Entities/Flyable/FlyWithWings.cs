@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Interfaces;
 
-namespace ChapterOne.Entities.Quack
+namespace ChapterOne.Entities.Flyable
 {
-    class NormalQuack : IQuackBehavior
+    public class FlyWithWings : IFlyBehavior
     {
-        public void Quack()
+        public void Fly()
         {
-            Console.WriteLine("Quack");
+            Console.WriteLine("I'm flying!!");
         }
     }
 }

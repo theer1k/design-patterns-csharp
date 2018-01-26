@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Entities;
-using ChapterOne.Entities.Quack;
-using ChapterOne.Entities.Fly;
-using ChapterOne.Interfaces;
+using ChapterOne.Entities.Quackable;
+using ChapterOne.Entities.Flyable;
 
 namespace ChapterOne.Entities.Duck
 {

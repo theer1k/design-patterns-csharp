@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using ChapterOne.Interfaces;
 
-namespace ChapterOne.Entities.Quack
+namespace ChapterOne.Entities.Quackable
 {
-    class Squeak : IQuackBehavior
+    class NormalQuack : IQuackBehavior
     {
         public void Quack()
         {
-            Console.WriteLine("Squeak");
+            Console.WriteLine("Quack");
         }
     }
 }

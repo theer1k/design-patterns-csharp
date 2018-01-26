@@ -9,8 +9,8 @@ namespace ChapterOne.Entities.Duck
     class ModelDuck : Duck
     {
         public ModelDuck() {
-            FlyBehavior = new Fly.FlyNoWay();
-            QuackBehavior = new Quack.NormalQuack();
+            FlyBehavior = new Flyable.FlyNoWay();
+            QuackBehavior = new Quackable.NormalQuack();
         }
 
         public override void Display() {
