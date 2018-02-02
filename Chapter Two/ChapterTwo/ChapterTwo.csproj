@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\CurrentConditionsDisplay.cs" />
     <Compile Include="Entities\WeatherData.cs" />
-    <Compile Include="Interfaces\DisplayElement.cs" />
-    <Compile Include="Interfaces\Observer.cs" />
-    <Compile Include="Interfaces\Subject.cs" />
+    <Compile Include="Interfaces\IDisplayElement.cs" />
+    <Compile Include="Interfaces\IObserver.cs" />
+    <Compile Include="Interfaces\ISubject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

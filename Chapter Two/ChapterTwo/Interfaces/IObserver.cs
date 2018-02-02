@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChapterTwo.Interfaces
 {
-    interface ISubject
+    interface IObserver
     {
-        void RegisterObserver(Observer o);
-        void RemoveObserver(Observer o);
-        void NotifyObservers();
+        void Update(float temp, float humidity, float pressure);
     }
 }

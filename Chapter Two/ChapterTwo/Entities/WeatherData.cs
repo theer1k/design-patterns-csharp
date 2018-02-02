@@ -9,14 +9,14 @@ namespace ChapterTwo.Entities
 {
     class WeatherData : ISubject
     {
-        private List<Observer> observers;
+        private List<IObserver> observers;
         private float temperature;
         private float humidity;
         private float pressure;
 
         public WeatherData()
         {
-            observers = new List<Observer>();
+            observers = new List<IObserver>();
         }
 
         public void MeasurementsChanged()
@@ -24,7 +24,7 @@ namespace ChapterTwo.Entities
             NotifyObservers();
         }
 
-        public void SetMeasurements(Observer o, float temperature, float humidity, float pressure)
+        public void SetMeasurements(float temperature, float humidity, float pressure)
         {
             this.temperature = temperature;
             this.humidity = humidity;
@@ -32,12 +32,12 @@ namespace ChapterTwo.Entities
             MeasurementsChanged();
         }
 
-        public void RegisterObserver(Observer o)
+        public void RegisterObserver(IObserver o)
         {
             observers.Add(o);
         }
 
-        public void RemoveObserver(Observer o)
+        public void RemoveObserver(IObserver o)
         {
             var i = observers.IndexOf(o);
             if (i >= 0)
@@ -50,7 +50,7 @@ namespace ChapterTwo.Entities
         {
             for (int i = 0; i < observers.Count(); i++)
             {
-                Observer observer = (Observer)observers[i];
+                IObserver observer = (IObserver)observers[i];
                 observer.Update(temperature, humidity, pressure);
             }
         }

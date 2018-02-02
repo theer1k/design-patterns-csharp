@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChapterTwo.Interfaces
 {
-    interface DisplayElement
+    interface IDisplayElement
     {
         void Display();
     }
