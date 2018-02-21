@@ -42,11 +42,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\ChicagoStyleCheesePizza.cs" />
+    <Compile Include="Entities\CheesePizza.cs" />
+    <Compile Include="Entities\ClamPizza.cs" />
+    <Compile Include="Entities\FreshClams.cs" />
+    <Compile Include="Entities\Garlic.cs" />
+    <Compile Include="Entities\MarinaraSauce.cs" />
+    <Compile Include="Entities\Mushroom.cs" />
+    <Compile Include="Entities\NYPizzaIngredientFactory.cs" />
     <Compile Include="Entities\NYPizzaStore.cs" />
-    <Compile Include="Entities\NYStyleCheesePizza.cs" />
+    <Compile Include="Entities\Onion.cs" />
+    <Compile Include="Entities\PepperoniPizza.cs" />
     <Compile Include="Entities\Pizza.cs" />
     <Compile Include="Entities\PizzaStore.cs" />
+    <Compile Include="Entities\RedPepper.cs" />
+    <Compile Include="Entities\ReggianoCheese.cs" />
+    <Compile Include="Entities\SlicedPepperoni.cs" />
+    <Compile Include="Entities\ThinCrustDough.cs" />
+    <Compile Include="Entities\VeggiePizza.cs" />
+    <Compile Include="Interfaces\ICheese.cs" />
+    <Compile Include="Interfaces\IClams.cs" />
+    <Compile Include="Interfaces\IDough.cs" />
+    <Compile Include="Interfaces\IPepperoni.cs" />
+    <Compile Include="Interfaces\IPizzaIngredientFactory.cs" />
+    <Compile Include="Interfaces\ISauce.cs" />
+    <Compile Include="Interfaces\IVeggies.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

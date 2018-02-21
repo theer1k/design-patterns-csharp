@@ -4,27 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ChapterFour.Interfaces;
 
 namespace ChapterFour.Entities
 {
     public abstract class Pizza
     {
         public String name;
-        public String dough;
-        public String sauce;
-        public ArrayList toppings = new ArrayList();
+   
+        public IDough dough;
+        public ISauce sauce;
+        public IVeggies[] veggies;
+        public ICheese cheese;
+        public IPepperoni pepperoni;
+        public IClams clam;
 
-        public void Prepare()
-        {
-            Console.WriteLine("Preparing + {0}", name);
-            Console.WriteLine("Tossing dough...");
-            Console.WriteLine("Adding sauce...");
-            Console.WriteLine("Adding toppings: ");
-            for (int i = 0; i < toppings.Count; i++)
-            {
-                Console.WriteLine(" " + toppings[i]);
-            }
-        }
+        public abstract void Prepare();
 
         public void Bake()
         {
@@ -44,6 +39,57 @@ namespace ChapterFour.Entities
         public String GetName()
         {
             return name;
+        }
+
+       public void SetName(String name)
+        {
+            this.name = name;
+        }
+
+        public override String ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append("---- " + name + " ----\n");
+            result.Append(dough + "\n");
+            result.Append(sauce + "\n");
+            if (dough != null)
+            {
+                result.Append(dough);
+                result.Append("\n");
+            }
+            if (sauce != null)
+            {
+                result.Append(sauce);
+                result.Append("\n");
+            }
+            if (cheese != null)
+            {
+                result.Append(cheese);
+                result.Append("\n");
+            }
+            if (veggies != null)
+            {
+                for (int i = 0; i < veggies.Length; i++)
+                {
+                    result.Append(veggies[i]);
+                    if (i < veggies.Length - 1)
+                    {
+                        result.Append(", ");
+                    }
+                }
+                result.Append("\n");
+            }
+            if (clam != null)
+            {
+                result.Append(clam);
+                result.Append("\n");
+            }
+            if (pepperoni != null)
+            {
+                result.Append(pepperoni);
+                result.Append("\n");
+            }
+            return result.ToString();
         }
     }
 }

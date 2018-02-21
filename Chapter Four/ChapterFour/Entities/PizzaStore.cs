@@ -9,7 +9,7 @@ namespace ChapterFour.Entities
 {
     public abstract class PizzaStore
     {
-        public Pizza orderPizza(String type)
+        public Pizza OrderPizza(String type)
         {
             Pizza pizza;
             pizza = CreatePizza(type);
