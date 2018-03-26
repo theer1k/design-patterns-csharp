@@ -5,3 +5,4 @@
 - ChapterFour - Factory Pattern ✅
 - ChapterFive- Singleton Pattern ✅
 - ChapterSix - Command Pattern ✅
+- ChapterSeven - Adapter Pattern ✅
