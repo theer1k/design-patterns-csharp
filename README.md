@@ -8,3 +8,4 @@
 - Chapter Seven - Adapter Pattern ✅
 - Chapter Eight- Template Method Pattern ✅
 - Chapter Nine - Iterator Pattern ✅
+- Chapter Ten - State Pattern ✅
