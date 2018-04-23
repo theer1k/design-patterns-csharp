@@ -10,3 +10,4 @@
 - Chapter Nine - Iterator Pattern ✅
 - Chapter Nine - Composite Pattern ✅
 - Chapter Ten - State Pattern ✅
+- Chapter Eleven - Proxy Pattern ✅
