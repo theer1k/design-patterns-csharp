@@ -31,8 +31,4 @@ At any given moment, someone struggles with the same software design problems yo
 
 The great challenge of all is to find out **Design Patterns** in the real world:
 
-```mermaid
-graph LR
-A[Normal People] -- Common Problems --> B((Design Patterns))
-B --> D{Read World}
-```
+``` mermaid graph LR A[Normal People] -- Common Problems --> B((Design Patterns)) B --> D{Read World} ```
