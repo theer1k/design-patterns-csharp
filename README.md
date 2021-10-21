@@ -1,6 +1,6 @@
 # Heads First - Design Patterns!
 
-This repository is based on the code made on book **Heads First - Design Patterns** adapted to from **Java** to **C#**.
+This repository is based on the code made on book **Heads First - Design Patterns** adapted from **Java** to **C#**.
 
 ![Design Pattern book](https://i.imgur.com/sV5Smc9.jpg)
 
